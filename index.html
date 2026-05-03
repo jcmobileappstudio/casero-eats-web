@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casero Eats, Comida casera, sin gastar de más</title>
+    <style>
+        :root {
+            --bg: #faf6f0;
+            --surface: #ffffff;
+            --text: #1a1a1a;
+            --muted: #555;
+            --accent: #d94e2e;
+            --accent2: #f2a93a;
+            --border: #e6dfd5;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: white;
+            text-align: center;
+            padding: 80px 24px 100px;
+        }
+        .hero h1 { margin: 0 0 12px; font-size: 48px; }
+        .hero p.tag { margin: 0 0 8px; font-size: 22px; font-weight: 600; opacity: 0.95; }
+        .hero p.es { margin: 0; font-size: 18px; opacity: 0.85; font-style: italic; }
+        main { max-width: 720px; margin: -40px auto 0; padding: 0 24px 80px; }
+        .card {
+            background: var(--surface);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+        .card h2 { margin-top: 0; color: var(--accent); }
+        .features {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: 1fr 1fr;
+            margin: 24px 0;
+        }
+        @media (max-width: 600px) {
+            .features { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 36px; }
+            .hero p.tag { font-size: 18px; }
+        }
+        .feature {
+            background: var(--bg);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+        .feature h3 { margin: 0 0 6px; font-size: 16px; }
+        .feature p { margin: 0; font-size: 14px; color: var(--muted); }
+        .links {
+            text-align: center;
+            margin-top: 32px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 6px 12px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: var(--muted);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Casero Eats</h1>
+        <p class="tag">Homemade meals on your budget</p>
+        <p class="es">Comida casera, sin gastar de más</p>
+    </div>
+
+    <main>
+        <div class="card">
+            <h2>Bilingual meal planning, built for our families</h2>
+            <p>Casero Eats helps Hispanic-American families in the US plan the week's meals, build a single shopping list, and cook from what's already in the pantry. Recipes are bilingual end to end, with cuisine flat-lay photography from across Latin America and beyond.</p>
+            <p>Planificación de comidas bilingüe, hecha para nuestras familias. Casero Eats ayuda a familias hispanohablantes en Estados Unidos a planificar la semana, hacer una sola lista de compras, y cocinar con lo que ya tienes en la despensa.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>43 cuisines</h3>
+                    <p>From Puerto Rico to Mexico to the Philippines, every recipe is curated.</p>
+                </div>
+                <div class="feature">
+                    <h3>Budget first</h3>
+                    <p>Cost per serving on every recipe. Set a weekly budget, we fit the plan to it.</p>
+                </div>
+                <div class="feature">
+                    <h3>On-device AI</h3>
+                    <p>Apple Intelligence powers planning and pantry scanning. Nothing leaves your phone.</p>
+                </div>
+                <div class="feature">
+                    <h3>Privacy built in</h3>
+                    <p>No tracking, no ads, no servers. All your data lives on your device.</p>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+                <a href="mailto:joeczo30@gmail.com">Contact</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Casero Eats &copy; 2026. Built solo, with care. Hecho solo, con cariño.</p>
+    </footer>
+</body>
+</html>
