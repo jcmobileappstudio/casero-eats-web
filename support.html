@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support, Casero Eats</title>
+    <style>
+        :root {
+            --bg: #faf6f0;
+            --surface: #ffffff;
+            --text: #1a1a1a;
+            --muted: #555;
+            --accent: #d94e2e;
+            --border: #e6dfd5;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+        header {
+            text-align: center;
+            padding: 48px 24px 32px;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+        }
+        header h1 { margin: 0 0 8px; font-size: 32px; color: var(--accent); }
+        header p { margin: 0; color: var(--muted); font-size: 15px; }
+        nav { display: flex; gap: 12px; justify-content: center; margin-top: 18px; }
+        nav a {
+            text-decoration: none;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        nav a:hover { background: var(--accent); color: white; }
+        article {
+            background: var(--surface);
+            padding: 32px;
+            border-radius: 16px;
+            margin-top: 32px;
+            border: 1px solid var(--border);
+        }
+        article h2 { margin-top: 0; color: var(--accent); }
+        article h3 { margin-top: 28px; }
+        details {
+            margin: 14px 0;
+            padding: 14px 18px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+        details summary {
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--text);
+        }
+        details[open] summary { margin-bottom: 10px; }
+        .contact-card {
+            margin: 20px 0;
+            padding: 20px;
+            background: var(--bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+        }
+        .contact-card a {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: var(--muted);
+            font-size: 13px;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Casero Eats</h1>
+        <p>Support / Soporte</p>
+        <nav>
+            <a href="#en">English</a>
+            <a href="#es">Español</a>
+            <a href="privacy.html">Privacy</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="en">
+            <h2>Support</h2>
+            <p>Got a question, found a bug, or have a recipe you wish was in the library? I read every email.</p>
+
+            <div class="contact-card">
+                <p>Email <a href="mailto:joeczo30@gmail.com">joeczo30@gmail.com</a></p>
+                <p style="margin: 0; color: var(--muted); font-size: 14px;">Replies usually within 48 hours.</p>
+            </div>
+
+            <h3>Frequently asked</h3>
+
+            <details>
+                <summary>How do I switch the app between English and Spanish?</summary>
+                <p>Go to Settings (gear icon, top right of the home screen), then App language. Pick English, Español, or Auto. Auto follows your phone's system language. Recipes have both translations and you can flip on each one.</p>
+            </details>
+
+            <details>
+                <summary>Do my recipes sync between my iPhone and iPad?</summary>
+                <p>If you have iCloud sync enabled (Settings, your name, iCloud, Casero Eats), yes. The first sync after enabling can take a few minutes.</p>
+            </details>
+
+            <details>
+                <summary>Can I import a recipe from a website?</summary>
+                <p>Yes. From the Recipes screen, tap the import button and paste a URL. We extract the schema.org Recipe data when sites publish it.</p>
+            </details>
+
+            <details>
+                <summary>What's the difference between Free and Pro?</summary>
+                <p>Free includes one weekly plan, the first 30 recipes, and basic shopping list. Pro unlocks unlimited weekly plans, the full recipe library, on-device AI planning, the pantry tracker, "cook with what you have," AI pantry scanning, and recipe export.</p>
+            </details>
+
+            <details>
+                <summary>How do I cancel my subscription?</summary>
+                <p>Open the iOS Settings app, tap your name at the top, then Subscriptions. Find Casero Eats and tap Cancel. Your Pro features stay active until the end of the current billing period.</p>
+            </details>
+
+            <details>
+                <summary>Where are my recipes and pantry stored?</summary>
+                <p>On your device. Casero Eats has no server. If you delete the app, your data is deleted with it. Use iCloud sync if you want a copy in iCloud.</p>
+            </details>
+
+            <details>
+                <summary>The app crashed or a recipe looks wrong, what do I do?</summary>
+                <p>Email me at <a href="mailto:joeczo30@gmail.com">joeczo30@gmail.com</a> with a screenshot and what you were doing when it happened. If a recipe has a typo or wrong ingredient, please mention the recipe name so I can fix it in the next update.</p>
+            </details>
+        </article>
+
+        <article id="es">
+            <h2>Soporte</h2>
+            <p>¿Tienes una pregunta, encontraste un error, o quieres una receta que no está en la biblioteca? Leo cada correo.</p>
+
+            <div class="contact-card">
+                <p>Correo <a href="mailto:joeczo30@gmail.com">joeczo30@gmail.com</a></p>
+                <p style="margin: 0; color: var(--muted); font-size: 14px;">Respuesta normalmente en 48 horas.</p>
+            </div>
+
+            <h3>Preguntas frecuentes</h3>
+
+            <details>
+                <summary>¿Cómo cambio el idioma de la aplicación entre inglés y español?</summary>
+                <p>Ve a Ajustes (ícono de engranaje, arriba a la derecha en la pantalla principal), luego App language. Elige English, Español, o Auto. Auto sigue el idioma del sistema de tu teléfono. Las recetas tienen ambas traducciones y puedes cambiar en cada una.</p>
+            </details>
+
+            <details>
+                <summary>¿Mis recetas se sincronizan entre mi iPhone y iPad?</summary>
+                <p>Si tienes la sincronización de iCloud activada (Ajustes, tu nombre, iCloud, Casero Eats), sí. La primera sincronización después de activarla puede tardar unos minutos.</p>
+            </details>
+
+            <details>
+                <summary>¿Puedo importar una receta desde un sitio web?</summary>
+                <p>Sí. Desde la pantalla de Recetas, toca el botón de importar y pega un enlace. Extraemos los datos de Receta de schema.org cuando los sitios los publican.</p>
+            </details>
+
+            <details>
+                <summary>¿Cuál es la diferencia entre Gratis y Pro?</summary>
+                <p>Gratis incluye un plan semanal, las primeras 30 recetas, y la lista de compras básica. Pro desbloquea planes semanales ilimitados, la biblioteca completa de recetas, planificación con AI en el dispositivo, el rastreador de despensa, "cocinar con lo que hay", escaneo de despensa con AI, y exportar recetas.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo cancelo mi suscripción?</summary>
+                <p>Abre la app de Ajustes de iOS, toca tu nombre arriba, luego Suscripciones. Busca Casero Eats y toca Cancelar. Tus funciones Pro siguen activas hasta el final del periodo de facturación actual.</p>
+            </details>
+
+            <details>
+                <summary>¿Dónde se guardan mis recetas y mi despensa?</summary>
+                <p>En tu dispositivo. Casero Eats no tiene servidor. Si borras la aplicación, tus datos se borran con ella. Usa la sincronización con iCloud si quieres una copia en iCloud.</p>
+            </details>
+
+            <details>
+                <summary>La aplicación falló o una receta se ve mal, ¿qué hago?</summary>
+                <p>Escríbeme a <a href="mailto:joeczo30@gmail.com">joeczo30@gmail.com</a> con una captura de pantalla y qué estabas haciendo cuando pasó. Si una receta tiene un error o un ingrediente equivocado, por favor menciona el nombre de la receta para arreglarla en la próxima actualización.</p>
+            </details>
+        </article>
+    </main>
+
+    <footer>
+        <p>Casero Eats &copy; 2026. Built with care. Hecho con cariño.</p>
+        <p><a href="privacy.html">Privacy / Privacidad</a></p>
+    </footer>
+</body>
+</html>
